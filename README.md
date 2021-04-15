@@ -1,29 +1,13 @@
-# pilfer
-Decrypt all ansible vault files recursively for search/editing, then re-encrypt them.
+# ansible-encrypt-vault
+Decrypt all ansible vault files in directory recursively for search/editing.
 
-Borrows heavily from the excellent, but no longer supported [Ansible Toolkit](https://github.com/dellis23/ansible-toolkit).
-
-Tested with Ansible v2.5+
+## Install
+```
+curl -sL https://raw.githubusercontent.com/ogaltsov/ansible-encrypt-vault/master/install.sh | bash -
+```
 
 ## Usage
-```
-./bulk-decrypt-vault.py [open|close]
-```
-
-- Download `bulk-decrypt-vault.py` and place it at the root of your Ansible directories
-
-- Edit the `VAULT_PASSWORD_PATH` in `bulk-decrypt-vault.py` [to match your vault file destination](https://github.com/aioue/pilfer/blob/master/bulk-decrypt-vault.py#L40)
-
-- Run `./bulk-decrypt-vault.py open` to decrypt all vaulted files recursively
-
-- Edit/search plaintext as needed
-
-- Run `./bulk-decrypt-vault.py close` to re-encrypt any changed files
-
-  Any unchanged files will returned to their original state.
-
-## Requirements
 
 ```
-pip install ansible ansible-vault pathlib
+python3 ansible-encrypt-vault -v <vault-password-file> -p <vault-directory-path>
 ```
