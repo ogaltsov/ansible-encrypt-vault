@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl https://github.com/ogaltsov/ansible-encrypt-vault/blob/master/ansible-encrypt-vault.py | bash
+curl -sL https://raw.githubusercontent.com/ogaltsov/ansible-encrypt-vault/master/ansible-encrypt-vault.py | bash
 chmod +x ansible-encrypt-vault.py
 mv ansible-encrypt-vault.py /usr/local/bin/ansible-encrypt-vault
 
