@@ -3,11 +3,6 @@
 # GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
 # heavily borrows from this excellent repo https://github.com/dellis23/ansible-toolkit
 
-# Requirments:
-# pip install ansible-vault (https://github.com/tomoh1r/ansible-vault)
-# pip install pathlib
-# pip install termcolor
-
 
 import argparse
 import errno
